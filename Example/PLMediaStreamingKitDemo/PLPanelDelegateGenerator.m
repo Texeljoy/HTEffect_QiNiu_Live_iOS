@@ -120,7 +120,7 @@
             
             if (!_isRenderInit) {
                 [[HTEffect shareInstance] releaseBufferRenderer];
-                _isRenderInit = [[HTEffect shareInstance] initBufferRenderer:format width:imageWidth height:imageHeight rotation:HTRotationClockwise90 isMirror:YES maxFaces:5];
+                _isRenderInit = [[HTEffect shareInstance] initBufferRenderer:format width:imageWidth height:imageHeight rotation:HTRotationClockwise0 isMirror:YES maxFaces:5];
             }
             
             [[HTEffect shareInstance] processBuffer:baseAddress];
