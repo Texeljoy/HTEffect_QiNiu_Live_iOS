@@ -23,7 +23,7 @@
 #import "WXApi.h"
 
 
-//todo --- HTEffect start3 ---
+//todo --- HTEffect start2 ---
 #import "HTUIManager.h"
 #import <HTEffect/HTEffectInterface.h>
 //todo --- HTEffect end ---
@@ -59,7 +59,7 @@ UIAlertViewDelegate
 }
 
 - (void)dealloc {
-    //todo --- HTEffect start4 ---
+    //todo --- HTEffect start6 ---
     [[HTEffect shareInstance] releaseBufferRenderer];
     [[HTUIManager shareManager] destroy];
     //todo --- HTEffect end ---

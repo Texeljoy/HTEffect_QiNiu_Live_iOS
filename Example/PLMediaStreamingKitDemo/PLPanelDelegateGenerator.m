@@ -18,9 +18,7 @@
 {
     PLMediaStreamingSession *_streamingSession;
     int _count;
-    //todo --- HTEffect start ---
     BOOL _isRenderInit;
-    //todo --- HTEffect end ---
 }
 
 - (instancetype)initWithMediaStreamingSession:(PLMediaStreamingSession *)streamingSession
@@ -87,7 +85,7 @@
         }];
         [d implementMethod:@selector(mediaStreamingSession:cameraSourceDidGetPixelBuffer:) withBlock:^CVPixelBufferRef(PLMediaStreamingSession *session, CVPixelBufferRef pixelBuffer) {
               
-            //todo --- HTEffect start6 ---
+            //todo --- HTEffect start5 ---
             CVPixelBufferLockBaseAddress(pixelBuffer, 0);
             unsigned char *baseAddress = (unsigned char *)CVPixelBufferGetBaseAddressOfPlane(pixelBuffer, 0);
             

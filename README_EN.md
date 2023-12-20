@@ -1,0 +1,24 @@
+[简体中文](README.md) | English
+
+# **HTEffect_QiNiu_Live_iOS**
+## **Instruction**
+- This article introduces how to quickly configure HTEffect module.
+
+<br/>
+
+## **Steps**
+### **1. Download**
+Execute the following commands in sequence
+- git clone **repository address**
+- cd **project directory**
+- git submodule init && git submodule update
+
+### **2. Configuration**
+After downloading, open project
+- Replace **Bundle Display Name** and **Bundle Identifier** with **your APP name** and **package name**, respectively
+- Replace **Your AppId** in [[HTEffect shareInstance] initHTEffect:@"Your AppId" withDelegate:self] with **your AppId** in PLAppDelegate.m
+- Replace **HTEffect.bundle** in HTEffect folder with your **HTEffect.bundle**
+- Build, Run, and search **init-status** to see relevant logs
+- The specific execution steps can be viewed by searching **//todo --- HTEffect** globally
+
+<br/>

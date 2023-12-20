@@ -41,9 +41,8 @@
     [PLStreamingEnv enableFileLogging];
     
     //todo --- HTEffect start1 ---
-//    #error 需要HTEffect appid，与包名绑定，请联系商务获取
-    NSString* key = @"";
-    [[HTEffect shareInstance] initHTEffect:key withDelegate:nil];
+    # error 需要HTEffect appid，与包名绑定，请联系商务获取
+    [[HTEffect shareInstance] initHTEffect:@"Your AppId" withDelegate:nil];
     //todo --- HTEffect end ---
     return YES;
 }
